@@ -8,6 +8,6 @@ export default defineConfig({
     include: ['src/**/*.{test,spec}.{js,ts,jsx,tsx}'],
     global: true,
     environment: 'jsdom',
-    setupFiles: ['src/vitest/registerMatchers.js'],
+    setupFiles: ['src/vitest/registerMatchers.js', 'src/vitest/cleanupDom.js'],
   },
 });
